@@ -7,7 +7,6 @@ import { useSelector } from 'react-redux'
 function App() {
   // @ts-ignore
   const monList = useSelector((state) => state.value)
-
   return (
     <div className="App">
       <header className="header">
