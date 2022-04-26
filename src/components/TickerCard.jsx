@@ -34,6 +34,7 @@ const TickerCard = ({ symbol, displayName }) => {
 
   useEffect(() => {
     setCoinName(displayName.split('/')[0].toLowerCase())
+    getMarketdata()
     setInterval(() => {
       getMarketdata()
     }, 5000)
